@@ -2,53 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>House of Books | A World of Knowledge</title>
+    <title>Vallejo Public Library | A World of Knowledge</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="Images/book-41635.png" width="125px">
+    <div class="container">
+        <div class="left-section">
+            <div class="logo-name-container">
+                <div class="logo-container">
+                    <img src="images/book-41635.png" width="100px" alt="Library Logo">
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="catalog.html">Catalog</a></li>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="contactus.html">Contact</a></li>
-                        <li><a href="myaccount.html">Account</a></li>
-                    </ul>
-                </nav>
-                <img src="images/cart.png" width="30px" height="30px">
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Give Your Mind a new break<br> Explore Modern Book World</h1>
-                    <p>“There is no friend as loyal as a book. <br>Read more Explore your mind, Success
-                        will come. </p>
-                    <a href="" class="btn">Reserve Book&#8594;</a>
-                </div>
-                <div class="col-2">
-                    <img src="images/varad-parulekar-Gls5DB9lk6s-unsplash.jpg">
+                <div class="name">
+                    <h1>Vallejo Public Library</h1>
                 </div>
             </div>
         </div>
+        <div class="navbar">
+            <div class="dropdown-container">
+                <a href="#" class="dropbtn" onclick="toggleDropdown()">☰</a>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="home.html">Home</a>
+                    <a href="catalog.html">Catalog</a>
+                    <a href="aboutus.html">About</a>
+                    <a href="contactus.html">Contact</a>
+                    <a href="signup.html">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+            <img src="images/cart.png" width="30px" height="30px" alt="Shopping Cart">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Give Your Mind a New Break<br> Explore the Modern Book World</h1>
+                <p>“There is no friend as loyal as a book. <br>Read more. Explore your mind. Success will come.”</p>
+                <a href="#" class="btn">Reserve Book &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/varad-parulekar-Gls5DB9lk6s-unsplash.jpg" alt="Library Interior">
+            </div>
+        </div>
     </div>
+</div>
     </header>
-
-    <!--------------------Featured Categories------------------------->
+    <form class="search-bar" action="search.html" method="get">
+        <input type="text" placeholder="Search..." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
     <div class="categories">
         <div class="small-container">
             <div class="row">
-                <div class="col-3">            
-                    <img src="images/matt-ridley-H-LIL57PHCc-unsplash.jpg">
-                    <h4>How Innovation Works</h4>
-                    <h5>-Matt Ridley</h5>
-                    <h4>Available Copies-6</h4>
+                <div class="col-3">
+                    <img src="images/matt-ridley-H-LIL57PHCc-unsplash.jpg" alt="Book Cover">
+                    <h1>How Innovation Works</h1>
+                    <h4>- Matt Ridley</h4>
+                    <h4>Available Copies: 50</h4>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -56,40 +67,57 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
                     </div>
-                    <p>$30.00</p>
-                </div>
-                <div class="col-3">
-                    <img src="images/morgan-housel-aZ_MmSmAcjg-unsplash.jpg">
-                    <h4>The Psychology of Money</h4>
-                    <h5>-Morgan Housel</h5>
-                    <h4>Available Copies-3</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
                     <p>$80.00</p>
                 </div>
                 <div class="col-3">
-                    <img src="images/tim-alex-1i-P178kxHQ-unsplash.jpg">
-                    <h4>The Picture of Dorian Gray</h4>
-                    <h5>-Oscar Wilde</h5>
-                    <h4>Available Copies-10</h4>
+                    <img src="images/morgan-housel-aZ_MmSmAcjg-unsplash.jpg" alt="Book Cover">
+                    <h1>Psychology Of Money</h1>
+                    <h4>- Morgan Housel</h4>
+                    <h4>Available Copies: 100</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <p>$90.00</p>
+                </div>
+                <div class="col-3">
+                    <img src="images/tim-alex-1i-P178kxHQ-unsplash.jpg" alt="Book Cover">
+                    <h1>The Picture of Dorian Gray</h1>
+                    <h4>- Oscar Wilde</h4>
+                    <h4>Available Copies: 50</h4>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-half"></i>
                     </div>
-                    <p>$60.00</p>
+                    <p>$40.00</p>
                 </div>
             </div>
-        </div>  
-    </div> 
+        </div>
+    </div>
+    <!---------------offer------------------->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/Vibin With Books It Ends With Us by Colleen Hoover.jpg" class="offer-img">
+                </div>
+                <div class="col-2">
+                <p>Exclusive book Available</p>
+                <h1>It Ends With Us</h1>
+                <h3> -By Collen Hover</h3>
+                <small>It Ends with Us is a book that follows a girl named Lily who has just moved and is ready to start her life after college. Lily then meets a guy named Ryle and she falls for him. As she is developing feelings for Ryle, Atlas, her first love, reappears and challenges the relationship between Lily and Ryle.</small>
+                <a href="" class="btn">Rent Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div> 
 
-    <!--------------------Footer------------------------->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -116,13 +144,26 @@
                     <ul>
                         <li><i class="fa fa-map-marker"></i> 123 Main Street, Cityville</li>
                         <li><i class="fa fa-phone"></i> +123 456 7890</li>
-                        <li><i class="fa fa-envelope"></i> info@houseofbooks.com</li>
+                        <li><i class="fa fa-envelope"></i> info@vallejopubliclibrary.com</li>
                     </ul>
                 </div>
             </div>
             <hr>
-            <p class="text-center">&copy; 2024 House of Books. All rights reserved.</p>
+            <p class="text-center">&copy; 2024 Vallejo Public Library. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Add any necessary scripts here -->
+    <script>
+        // You can add any JavaScript code here if needed
+        function toggleDropdown() {
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
+                dropdownMenu.style.display = "block";
+            } else {
+                dropdownMenu.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

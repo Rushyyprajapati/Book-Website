@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalog | Vallejo Public Library</title>
+    <link rel="stylesheet" href="catalog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function toggleDropdown() {
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            if (dropdownMenu.style.display === "none") {
+                dropdownMenu.style.display = "block";
+            } else {
+                dropdownMenu.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="images/book-41635.png" width="125px" alt="Library Logo">
+                    <h1>Vallejo Public Library</h1>
+                </div>
+            </div>
+            <nav>
+                <a href="#" class="dropbtn" onclick="toggleDropdown()">☰</a>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="home.html">Home</a>
+                    <a href="catalog.html">Catalog</a>
+                    <a href="aboutus.html">About</a>
+                    <a href="contactus.html">Contact</a>
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+                </div>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px" alt="Shopping Cart">
+        </div>
+        
+        <!-- Search Bar -->
+        <form class="search-bar" action="#" method="get">
+            <input type="text" placeholder="Search books..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+        <div class="main-content">
+            <h2>Filter Options</h2>
+            <form action="#" method="GET">
+                <label for="price">Price Range:</label>
+                <input type="text" id="price" name="price">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author">
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="adventure">Adventure</option>
+                    <option value="action">Action</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="horror">Horror</option>
+                    <option value="love">Love</option>
+                    <option value="manga">Manga</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="Sci-Fi">Sci-Fi</option> <!-- Fixed typo here -->
+                    <option value="rom-com">Rom-com</option>
+                </select>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+                <button type="submit">Apply Filters</button>
+            </form>
+
+            <div class="categories">
+                <div class="small-container">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="images/matt-ridley-H-LIL57PHCc-unsplash.jpg" alt="Book Cover">
+                            <h1>How Innovation Works</h1>
+                            <h4>- Matt Ridley</h4>
+                            <h4>Available Copies: 50</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>$80.00</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/morgan-housel-aZ_MmSmAcjg-unsplash.jpg" alt="Book Cover">
+                            <h1>Psychology Of Money</h1>
+                            <h4>- Morgan Housel</h4>
+                            <h4>Available Copies: 100</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </div>
+                            <p>$90.00</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/tim-alex-1i-P178kxHQ-unsplash.jpg" alt="Book Cover">
+                            <h1>The Picture of Dorian Gray</h1>
+                            <h4>- Oscar Wilde</h4>
+                            <h4>Available Copies: 50</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </div>
+                            <p>$40.00</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/fauzan-ardhi-e-5DieY8snc-unsplash.jpg" alt="Book Cover">
+                            <h1>Design Anatology</h1>
+                            <h4>- Masthead</h4>
+                            <h4>Available Copies: 20</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>$28.00</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/karen-zhao-2bqXqr4GeCg-unsplash.jpg" alt="Book Cover">
+                            <h1>Book of Fairy Tales</h1>
+                            <h4>- Angela Cartier</h4>
+                            <h4>Available Copies: 10</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </div>
+                            <p>$42.00</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/sincerely-media-CXYPfveiuis-unsplash.jpg" alt="Book Cover">
+                            <h1>Milk and Honey</h1>
+                            <h4>- Rupi Kaur</h4>
+                            <h4>Available Copies: 75</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </div>
+                            <p>$35.00</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/bree-anne-3AJoc9iJjo8-unsplash.jpg" alt="Book Cover">
+                            <h1>Mere Christianity</h1>
+                            <h4>- C.S.Lewis</h4>
+                            <h4>Available Copies: 32</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </div>
+                            <p>$20.00</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/madalyn-cox-O7ygzpAL4Mc-unsplash.jpg" alt="Book Cover">
+                            <h1>The Two Towers</h1>
+                            <h4>- J.R.R Tolkien</h4>
+                            <h4>Available Copies: 50</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </div>
+                            <p>$62.00</p>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/zoe-1nYWu8_s3dE-unsplash.jpg" alt="Book Cover">
+                            <h1>Harry Potter</h1>
+                            <h4>- J.K.Rowling</h4>
+                            <h4>Available Copies: 50</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </div>
+                            <p>$75.00</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="myaccount.html">Account</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i> 123 Main Street, Cityville</li>
+                        <li><i class="fa fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fa fa-envelope"></i> info@vallejopubliclibrary.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2024 Vallejo Public Library. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

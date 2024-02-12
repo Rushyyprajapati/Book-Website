@@ -1,0 +1,159 @@
+/* Global Styles */
+body, .header {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(#fff, #17e18d);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 260px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%; /* Set image width to fill its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav .dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #f8f9fa;
+}
+
+.search-bar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main-content {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form label {
+    margin-right: 10px;
+}
+
+form input[type="text"], form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.categories {
+    margin-top: 20px;
+}
+
+.col-3 {
+    margin-bottom: 20px;
+}
+
+.col-3 img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.col-3 h1, .col-3 h4 {
+    margin: 5px 0;
+}
+
+.col-3 h4 {
+    font-weight: normal;
+    color: #666;
+}
+
+.rating {
+    color: #f8ce0b;
+}
+
+.rating i {
+    font-size: 18px;
+}
