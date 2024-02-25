@@ -1,7 +1,8 @@
 /* Global Styles */
-body, .header {
+body,
+.header {
     font-family: 'Poppins', sans-serif;
-    background: radial-gradient(#fff, #17e18d);
+    background: radial-gradient(#a09595, #17e18d);
     margin: 0;
     padding: 0;
 }
@@ -16,14 +17,14 @@ body, .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f8f9fa;
+    background-color: none;
     padding: 10px;
 }
 
 .row {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Adjust as needed */
+    justify-content: space-between;
 }
 
 .col-3 {
@@ -34,14 +35,13 @@ body, .header {
 
 .col-3 img {
     width: 100%; /* Set image width to fill its container */
-    height: auto; /* Maintain aspect ratio */
+    height: fit-content; /* Maintain aspect ratio */
     border-radius: 5px;
 }
 
-
 .logo-container {
     display: flex;
-    align-items: center;
+    align-items: right;
 }
 
 .logo img {
@@ -56,9 +56,15 @@ body, .header {
     font-size: 24px;
 }
 
+nav .dropdown-container {
+    position: relative;
+}
+
 nav .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
+    top: 100%; /* Position below the nav bar */
+    right: 0; /* Position on the right */
     background-color: #fff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -67,7 +73,7 @@ nav .dropdown-content {
 
 nav .dropdown-content a {
     display: block;
-    padding: 12px 16px;
+    padding: 10px 12px;
     text-decoration: none;
     color: #333;
 }
@@ -85,13 +91,13 @@ nav .dropdown-content a:hover {
 .search-bar input[type="text"] {
     width: 300px;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ff523b;
     border-radius: 5px;
 }
 
 .search-bar button {
     padding: 10px;
-    background-color: #007bff;
+    background-color: #ff523b;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -112,7 +118,8 @@ form label {
     margin-right: 10px;
 }
 
-form input[type="text"], form select {
+form input[type="text"],
+form select {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -120,7 +127,7 @@ form input[type="text"], form select {
 
 form button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #ff523b;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -136,12 +143,13 @@ form button {
 }
 
 .col-3 img {
-    max-width: 80%;
+    max-width: auto;
     height: auto;
     border-radius: 5px;
 }
 
-.col-3 h1, .col-3 h4 {
+.col-3 h1,
+.col-3 h4 {
     margin: 5px 0;
 }
 
@@ -151,9 +159,20 @@ form button {
 }
 
 .rating {
-    color: #f8ce0b;
+    color: #ff523b;
 }
 
 .rating i {
     font-size: 18px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .col-3 {
+        flex-basis: 100%; /* Full width on smaller screens */
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%; /* Full width input field */
+    }
 }

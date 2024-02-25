@@ -155,20 +155,20 @@ h4 {
 }
 
 .dropdown-content {
-    position: absolute;
+    position: static ;
     top: 50px; /* Adjust the top position as needed */
-    left: 0;
+    left: 0px;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2;
     display: none;
 }
 
 .dropdown-content a {
     color: black;
     position: left;
-    padding: 12px 16px;
+    padding: 10px 12px;
     text-decoration: none;
     display: block;
 }
@@ -183,5 +183,5 @@ h4 {
 
 .cart-container {
     margin-right: 15px; /* Adjust the margin as needed */
-    position: center;
+    position: fixed;
 }
